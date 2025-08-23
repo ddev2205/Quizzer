@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="setup-screen" class="screen">
+            <h1>Welcome to Quizzer</h1>
+            <p>Choose your challenge!</p>
+            
+            <form id="quiz-setup-form">
+                
+                <label for="category">Category:</label>
+                <select id="category">
+                <option value="any">Any Category</option>
+                </select>
+                
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="any">Any Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                
+                <label for="question-type">Question Type:</label>
+                <select id="question-type">
+                    <option value="any">Any Type</option>
+                    <option value="multiple">Multiple Choice</option>
+                    <option value="boolean">True / False</option>
+                </select>
+                
+                <button type="submit", class="btn">Ready to become quiz master?</button>
+            </form>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <header class="quiz-header">
+                <h1>Quizzer</h1>
+                <div id="score-display">Score: <span id="current-score">0</span>/10</div>
+                <div id="question-counter">Question 1/10</div>
+            </header>
+
+            <div class="question-container">
+                <h2 id="question-text">Question will load here...</h2>
+            </div>
+
+            <div id="answer-buttons" class="answers-grid">
+            </div>
+        </div>
+        
+        <div id="result-screen" class="screen hidden">
+            <h1>Quiz Completed 🎉</h1>
+            <p id="final-score">You scored 0/10</p>
+            <button id="restart-btn" class="btn">Play Again</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
