@@ -42,8 +42,10 @@ body{
 
 
 #score-display{
+    font-size: 1.1rem;
     font-weight: bold;
     color: #7dd3fc;
+    margin-left: 1.5rem;
 }
 
 .question-container{
